@@ -1,0 +1,44 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./sidebar.css);
+@import url(./section.css);
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__nav,
+  .header__menu,
+  .header__more__shop,
+  .header__more__account {
+    display: none;
+  }
+
+  .sidebar__content__mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .section__list__item__content__gr_btn {
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+  }
+
+  .section__list__item__content__gr_btn__btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__list__item__content__title__model {
+    font-size: 32px;
+  }
+}

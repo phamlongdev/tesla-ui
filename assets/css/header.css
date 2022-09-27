@@ -1,0 +1,136 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 0 20px;
+  z-index: 2;
+}
+
+.header__logo {
+  width: 152px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tds-icon.tds-icon-logo-wordmark.tds-site-logo-icon {
+  width: 120px;
+  height: 24px;
+}
+
+.header__nav {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav__hover {
+  position: absolute;
+  left: 0;
+  height: 32px;
+  border-radius: 6px;
+  background-color: rgba(162, 169, 194, 0.25);
+  z-index: -1;
+  transition: all 0.5s ease 0s;
+}
+
+.header__nav__navlink {
+  padding: 0 18px;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav__navlink:nth-child(1):hover ~ .header__nav__hover {
+  width: 90px;
+  left: 2px;
+}
+
+.header__nav__navlink:nth-child(2):hover ~ .header__nav__hover {
+  width: 90px;
+  left: 98px;
+}
+
+.header__nav__navlink:nth-child(3):hover ~ .header__nav__hover {
+  width: 90px;
+  left: 194px;
+}
+
+.header__nav__navlink:nth-child(4):hover ~ .header__nav__hover {
+  width: 90px;
+  left: 290px;
+}
+
+.header__nav__navlink:nth-child(5):hover ~ .header__nav__hover {
+  width: 110px;
+  left: 386px;
+}
+
+.header__nav__navlink:nth-child(6):hover ~ .header__nav__hover {
+  width: 120px;
+  left: 500px;
+}
+
+.header__more {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.header__more__hover {
+  position: absolute;
+  left: 0;
+  height: 32px;
+  border-radius: 6px;
+  background-color: rgba(162, 169, 194, 0.25);
+  z-index: -1;
+  transition: all 0.5s ease 0s;
+}
+
+.header__more__shop {
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__more__shop:hover ~ .header__more__hover {
+  width: 66px;
+  left: -15px;
+}
+
+.header__more__account {
+  padding: 0 26px;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__more__account:hover ~ .header__more__hover {
+  width: 80px;
+  left: 54px;
+}
+
+.header__more__btn_sidebar {
+  cursor: pointer;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__more__btn_sidebar:hover ~ .header__more__hover {
+  width: 66px;
+  left: 138px;
+}

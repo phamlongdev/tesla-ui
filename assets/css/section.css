@@ -1,0 +1,125 @@
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.section__list {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  z-index: 1;
+}
+
+.section__list__item {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__list__item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 72vh;
+}
+
+.section__list__item__content:nth-child(1) {
+  position: relative;
+}
+
+@keyframes btnDown {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+.section__list__item__content__btn_down {
+  cursor: pointer;
+  position: absolute;
+  top: 108%;
+  left: calc((100% - 20px) / 2);
+  font-size: 30px;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: btnDown 1.5s ease-in-out infinite 1.5s;
+}
+
+.section__list__item__content__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__list__item__content__title__model {
+  cursor: default;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.section__list__item__content__title__description {
+  cursor: default;
+  font-size: 16px;
+}
+
+.section__list__item__content__title__description > span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section__list__item__content__gr_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 552px;
+  height: 40px;
+}
+
+.btn--last {
+  width: fit-content;
+}
+
+.section__list__item__content__gr_btn__btn {
+  cursor: pointer;
+  width: 264px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.section__list__item__content__gr_btn__btn:nth-child(1) {
+  background-color: #171a20cc;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section__list__item__content__gr_btn__btn:nth-child(2) {
+  background-color: #f4f4f4a6;
+  color: #393c41;
+  font-size: 16px;
+  font-weight: 600;
+}
